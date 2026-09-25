@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-405467b3-f3c1-4627-97f7-a34fcc5a30fc/styles.css">
+<script src="_ds/modernist-405467b3-f3c1-4627-97f7-a34fcc5a30fc/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html, body { margin: 0; }
+  a { color: var(--color-accent); }
+  a:hover { color: var(--color-accent-700); }
+  @keyframes caret { 0%, 49% { opacity: 1 } 50%, 100% { opacity: 0 } }
+</style>
+</helmet>
+
+<div style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: var(--color-bg); border-bottom: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 14px 40px; display: flex; align-items: center; gap: 40px">
+      <div style="display: flex; align-items: baseline; gap: 10px; margin-right: auto">
+        <a href="Rookledger Site.dc.html" style="font-family: var(--font-heading); font-weight: 800; font-size: 19px; letter-spacing: -0.02em; color: var(--color-text); text-decoration: none" style-hover="color: var(--color-accent)">ROOKLEDGER</a>
+        <span style="font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-accent); border-left: 2px solid var(--color-divider); padding-left: 10px">GroundworkOS</span>
+      </div>
+      <nav style="display: flex; gap: 28px; font-size: 13.5px; letter-spacing: 0.02em">
+        <a href="#platform" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Platform</a>
+        <a href="#modules" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Modules</a>
+        <a href="#cis" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">CIS</a>
+        <a href="#screens" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Inside</a>
+        <a href="#deploy" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Deployment</a>
+      </nav>
+      <a class="btn btn-primary" href="#contact" style="text-decoration: none">Book a walkthrough</a>
+    </div>
+  </header>
+
+  <section id="top" style="max-width: 1320px; margin: 0 auto; padding: 0 40px">
+    <div style="padding: 88px 0 40px; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 64px; align-items: end">
+      <div>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 28px">
+          <span class="tag tag-outline">UK Construction Industry Scheme</span>
+          <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-neutral-600)">GroundworkOS by Rookledger</span>
+        </div>
+        <h1 style="font-size: clamp(48px, 6.2vw, 92px); line-height: 0.98; letter-spacing: -0.035em; margin: 0 0 24px; max-width: 15ch">The OS for UK groundwork contractors.</h1>
+        <p style="font-size: 21px; line-height: 1.35; max-width: 42ch; margin: 0 0 32px; color: var(--color-neutral-800)">Jobs, CIS, quotes, invoices, plant, subcontractors and timesheets — built for the way groundwork companies actually run <span style="color: var(--color-accent-700); font-family: var(--font-heading); font-weight: 800">{{ rotator }}</span><span style="display: inline-block; width: 10px; height: 21px; margin-left: 2px; vertical-align: -3px; background: var(--color-accent); animation: caret 1s steps(1) infinite"></span></p>
+        <div style="display: flex; gap: 12px; align-items: center">
+          <a class="btn btn-primary" href="#contact" style="text-decoration: none; padding: 12px 20px; font-size: 15px">Book a walkthrough</a>
+          <a class="btn btn-secondary" href="#modules" style="text-decoration: none; padding: 12px 20px; font-size: 15px">See every module</a>
+        </div>
+      </div>
+      <div style="border-left: 2px solid var(--color-divider); padding-left: 32px; display: grid; gap: 18px">
+        <p style="margin: 0; font-size: 14px; line-height: 1.5; color: var(--color-neutral-700)">One workspace from enquiry to CIS300. Quotes go out as PDFs, invoices carry the deduction, and the monthly return exports HMRC-formatted — no spreadsheet in between.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--color-divider)">
+          <div style="background: var(--color-bg); padding: 14px 0"><div style="font-family: var(--font-heading); font-weight: 800; font-size: 30px; line-height: 1">18</div><div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-600)">Modules shipped</div></div>
+          <div style="background: var(--color-bg); padding: 14px 0 14px 14px"><div style="font-family: var(--font-heading); font-weight: 800; font-size: 30px; line-height: 1">4</div><div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-600)">Accounting syncs</div></div>
+          <div style="background: var(--color-bg); padding: 14px 0"><div style="font-family: var(--font-heading); font-weight: 800; font-size: 30px; line-height: 1">3</div><div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-600)">Permission roles</div></div>
+          <div style="background: var(--color-bg); padding: 14px 0 14px 14px"><div style="font-family: var(--font-heading); font-weight: 800; font-size: 30px; line-height: 1">2</div><div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-neutral-600)">Cloudflare projects</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="border-top: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; gap: 40px; flex-wrap: wrap">
+      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-neutral-600)">Syncs with</span>
+      <div style="display: flex; gap: 40px; flex-wrap: wrap; font-family: var(--font-heading); font-weight: 800; font-size: 16px; letter-spacing: -0.01em; color: var(--color-neutral-600)">
+        <span>Xero</span>
+        <span>QuickBooks Online</span>
+        <span>Sage Accounting</span>
+        <span>FreeAgent</span>
+      </div>
+      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-neutral-600)">CIS300 exports as HMRC-formatted CSV</span>
+    </div>
+  </div>
+
+  <section id="platform" style="border-top: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 64px">
+      <div>
+        <h6 style="color: var(--color-accent); margin: 0 0 16px">Why it exists</h6>
+        <h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.025em; margin: 0">Generic job software doesn't know what CIS is.</h2>
+      </div>
+      <div style="display: grid; gap: 20px; font-size: 17px; line-height: 1.5">
+        <p style="margin: 0">Groundwork runs on gangs, plant, retentions and deductions. Most tools ask you to bolt that on with spreadsheets and a bookkeeper.</p>
+        <p style="margin: 0">GroundworkOS models it directly: subcontractor verification status, automatic CIS deduction on invoices, a monthly CIS300 return export, and expiry tracking for CSCS cards, NRSWA certifications and public liability insurance.</p>
+        <p style="margin: 0; color: var(--color-neutral-700)">Every create, update and delete is recorded with full change history, so the audit trail is the system of record — not somebody's memory of the site.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="modules" style="border-top: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 64px; margin-bottom: 48px">
+        <h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.025em; margin: 0">Modules</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full contractor workflow in one workspace — site delivery, money, compliance and plant — with role-based access for admins, managers and foremen.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; background: var(--color-divider); border-top: 2px solid var(--color-divider); border-bottom: 2px solid var(--color-divider)">
+        <div style="background: var(--color-bg); padding: 28px 28px 32px 0">
+          <h6 style="color: var(--color-accent); margin: 0 0 20px">Site &amp; delivery</h6>
+          <div style="display: grid; gap: 14px">
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Jobs</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Full lifecycle from enquiry to completion, with progress tracking and site details.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Schedule</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Crew and plant scheduling calendar.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Timesheets</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Daily time logging per job and worker.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Clients &amp; subcontractors</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Contact management with CIS verification status.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">CSV import</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Bulk import clients and jobs from spreadsheet.</div></div>
+          </div>
+        </div>
+        <div style="background: var(--color-bg); padding: 28px">
+          <h6 style="color: var(--color-accent); margin: 0 0 20px">Money</h6>
+          <div style="display: grid; gap: 14px">
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Quotes</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Line-item quotes with PDF export and client email sending.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Invoices</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">CIS-aware invoicing with PDF export and accounting sync.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Purchase orders</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Supplier PO management with PDF export.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Reports</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Revenue overview, job P&amp;L, rate book, CIS300 export.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Client portal</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Shareable quote approval links for clients.</div></div>
+          </div>
+        </div>
+        <div style="background: var(--color-bg); padding: 28px 0 32px 28px">
+          <h6 style="color: var(--color-accent); margin: 0 0 20px">Compliance &amp; plant</h6>
+          <div style="display: grid; gap: 14px">
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Documents</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">RAMS, insurance and permits with expiry alerts.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Plant</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Fleet management with MOT, service and LOLER exam tracking.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">CIS300 export</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">HMRC-formatted CSV per tax month, ready to submit.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Audit trail</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Every change recorded with full history.</div></div>
+            <div><div style="font-family: var(--font-heading); font-weight: 800; font-size: 17px">Onboarding wizard</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Guided company setup on first login.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cis" style="border-top: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px">
+      <h6 style="color: var(--color-accent); margin: 0 0 16px">The workflow</h6>
+      <h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 40px; max-width: 22ch">Enquiry to CIS300, without leaving the system.</h2>
+      <div style="display: flex; gap: 0; border-bottom: 2px solid var(--color-divider); flex-wrap: wrap">
+        <button onClick="{{ tab0 }}" style="appearance: none; background: transparent; border: 0; border-bottom: 3px solid {{ mark0 }}; cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 15px; letter-spacing: -0.01em; color: var(--color-text); padding: 12px 22px 12px 0; margin-bottom: -2px; text-align: left">Jobs &amp; schedule</button>
+        <button onClick="{{ tab1 }}" style="appearance: none; background: transparent; border: 0; border-bottom: 3px solid {{ mark1 }}; cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 15px; letter-spacing: -0.01em; color: var(--color-text); padding: 12px 22px; margin-bottom: -2px; text-align: left">Quotes &amp; invoices</button>
+        <button onClick="{{ tab2 }}" style="appearance: none; background: transparent; border: 0; border-bottom: 3px solid {{ mark2 }}; cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 15px; letter-spacing: -0.01em; color: var(--color-text); padding: 12px 22px; margin-bottom: -2px; text-align: left">CIS &amp; subcontractors</button>
+        <button onClick="{{ tab3 }}" style="appearance: none; background: transparent; border: 0; border-bottom: 3px solid {{ mark3 }}; cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 15px; letter-spacing: -0.01em; color: var(--color-text); padding: 12px 22px; margin-bottom: -2px; text-align: left">Plant &amp; documents</button>
+        <button onClick="{{ tab4 }}" style="appearance: none; background: transparent; border: 0; border-bottom: 3px solid {{ mark4 }}; cursor: pointer; font-family: var(--font-heading); font-weight: 800; font-size: 15px; letter-spacing: -0.01em; color: var(--color-text); padding: 12px 22px; margin-bottom: -2px; text-align: left">Reports &amp; audit</button>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; padding-top: 40px; align-items: start">
+        <div style="display: grid; gap: 16px">
+          <h3 style="margin: 0; font-size: 28px; letter-spacing: -0.02em">{{ panelTitle }}</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5">{{ panelBody }}</p>
+          <ul style="margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; border-top: 1px solid var(--color-divider)">
+            <sc-for list="{{ panelPoints }}" as="point" hint-placeholder-count="4">
+              <li style="display: grid; grid-template-columns: 18px 1fr; gap: 12px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--color-divider); font-size: 14.5px">
+                <span style="font-family: var(--font-heading); font-weight: 800; font-size: 11px; color: var(--color-accent)">{{ point.n }}</span>
+                <span>{{ point.text }}</span>
+              </li>
+            </sc-for>
+          </ul>
+        </div>
+        <div style="background: var(--color-surface); padding: 24px">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px">
+            <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-neutral-600)">{{ tableCaption }}</span>
+            <span class="tag tag-accent">{{ tableTag }}</span>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>{{ colA }}</th>
+                <th>{{ colB }}</th>
+                <th style="text-align: right">{{ colC }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <sc-for list="{{ rows }}" as="row" hint-placeholder-count="5">
+                <tr>
+                  <td style="font-family: var(--font-heading); font-weight: 800">{{ row.a }}</td>
+                  <td style="color: var(--color-neutral-700)">{{ row.b }}</td>
+                  <td style="text-align: right; font-variant-numeric: tabular-nums">{{ row.c }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showScreens }}" hint-placeholder-val="{{ true }}">
+    <section id="screens" style="border-top: 2px solid var(--color-divider)">
+      <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px">
+        <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 64px; margin-bottom: 40px; align-items: end">
+          <div>
+            <h6 style="color: var(--color-accent); margin: 0 0 16px">Inside the product</h6>
+            <h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.025em; margin: 0">Dense screens, built for the office.</h2>
+          </div>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 56ch">A loading gate on the core lists means no page ever flashes a false "no results". Foremen see the dashboard, jobs, schedule and timesheets; managers get the whole operation; admins get users, the audit log and the deploy guide.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; background: var(--color-divider)">
+          <figure style="background: var(--color-bg); padding-right: 2px">
+            <div class="grayscale" style="aspect-ratio: 16 / 10"><image-slot id="gw-shot-dashboard" shape="rect" placeholder="Drop a dashboard capture"></image-slot></div>
+            <figcaption style="font-size: 12px; padding: 10px 0">Dashboard — live job and money position</figcaption>
+          </figure>
+          <figure style="background: var(--color-bg)">
+            <div class="grayscale" style="aspect-ratio: 16 / 10"><image-slot id="gw-shot-jobs" shape="rect" placeholder="Drop a jobs-list capture"></image-slot></div>
+            <figcaption style="font-size: 12px; padding: 10px 0">Jobs — lifecycle, progress, site detail</figcaption>
+          </figure>
+          <figure style="background: var(--color-bg)">
+            <div class="grayscale" style="aspect-ratio: 16 / 10"><image-slot id="gw-shot-quotes" shape="rect" placeholder="Drop a quotes capture"></image-slot></div>
+            <figcaption style="font-size: 12px; padding: 10px 0">Quotes — line items, PDF, client approval</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <section style="background: var(--color-accent); color: var(--color-bg)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 88px 40px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 64px; align-items: end">
+      <h2 style="margin: 0; font-size: clamp(36px, 5vw, 72px); line-height: 0.98; letter-spacing: -0.035em">Every deduction, card and LOLER date in one place.</h2>
+      <div style="display: grid; gap: 20px">
+        <p style="margin: 0; font-size: 17px; line-height: 1.5">Gross, Net, Unmatched, Unverified — status is tracked per subcontractor, deductions land on the invoice automatically, and the monthly return leaves as HMRC-formatted CSV.</p>
+        <div>
+          <a class="btn" href="#contact" style="background: var(--color-bg); color: var(--color-text); text-decoration: none; padding: 12px 20px; font-size: 15px">Book a walkthrough</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="deploy" style="border-top: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 64px; margin-bottom: 40px">
+        <div>
+          <h6 style="color: var(--color-accent); margin: 0 0 16px">Deployment</h6>
+          <h2 style="font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.025em; margin: 0">Two projects. One Cloudflare account.</h2>
+        </div>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">GroundworkOS deploys as two Cloudflare projects — the frontend on Cloudflare Pages, the API as a Cloudflare Worker — wired together by a Workers Route so the frontend's relative API calls stay same-origin. Full setup is documented in DEPLOYMENT.md.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; background: var(--color-divider); border-top: 2px solid var(--color-divider)">
+        <div style="background: var(--color-bg); padding: 24px 24px 24px 0"><h6 style="margin: 0 0 8px; color: var(--color-neutral-600)">Frontend</h6><div style="font-family: var(--font-heading); font-weight: 800; font-size: 18px">React 19 + Vite</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Tailwind v4, wouter routing</div></div>
+        <div style="background: var(--color-bg); padding: 24px"><h6 style="margin: 0 0 8px; color: var(--color-neutral-600)">Backend</h6><div style="font-family: var(--font-heading); font-weight: 800; font-size: 18px">Hono on Workers</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">pnpm workspace monorepo</div></div>
+        <div style="background: var(--color-bg); padding: 24px"><h6 style="margin: 0 0 8px; color: var(--color-neutral-600)">Data</h6><div style="font-family: var(--font-heading); font-weight: 800; font-size: 18px">D1 + Drizzle</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">R2 object storage, KV for rate limits</div></div>
+        <div style="background: var(--color-bg); padding: 24px 0 24px 24px"><h6 style="margin: 0 0 8px; color: var(--color-neutral-600)">Access</h6><div style="font-family: var(--font-heading); font-weight: 800; font-size: 18px">Better Auth</div><div style="font-size: 13.5px; color: var(--color-neutral-700)">Email + password, invite-only, three roles</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top: 2px solid var(--color-divider)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 72px 40px; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 64px; align-items: start">
+      <div>
+        <h2 style="font-size: clamp(30px, 3.4vw, 48px); line-height: 1.02; letter-spacing: -0.03em; margin: 0 0 16px; max-width: 20ch">See it against your own job book.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 48ch">Send a company name and we'll run a walkthrough on data that looks like yours — quotes, a CIS-deducted invoice, and the CIS300 export for last tax month.</p>
+      </div>
+      <form onSubmit="{{ onSubmit }}" style="display: grid; gap: 16px; border-left: 2px solid var(--color-divider); padding-left: 32px">
+        <div class="field"><label for="gw-company">Company</label><input class="input" id="gw-company" placeholder="e.g. Ashdown Groundworks Ltd"></div>
+        <div class="field"><label for="gw-email">Work email</label><input class="input" id="gw-email" type="email" placeholder="you@company.co.uk"></div>
+        <div class="field"><label for="gw-size">Crew size</label><input class="input" id="gw-size" placeholder="e.g. 12 on the books, 6 subbies"></div>
+        <button class="btn btn-primary btn-block" type="submit" style="padding: 12px 20px; font-size: 15px">{{ submitLabel }}</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="border-top: 2px solid var(--color-divider); background: var(--color-surface)">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 56px 40px 32px; display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr)); gap: 48px">
+      <div>
+        <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px">
+          <a href="Rookledger Site.dc.html" style="font-family: var(--font-heading); font-weight: 800; font-size: 19px; letter-spacing: -0.02em; color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">ROOKLEDGER</a>
+          <span style="font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-accent)">GroundworkOS</span>
+        </div>
+        <p style="margin: 0; font-size: 13.5px; max-width: 34ch; color: var(--color-neutral-700)">GroundworkOS — jobs, CIS compliance, quotes, invoices, plant and timesheets for UK groundwork contractors.</p>
+      </div>
+      <div style="display: grid; gap: 8px; align-content: start; font-size: 13.5px">
+        <h6 style="margin: 0 0 4px; color: var(--color-neutral-600)">Product</h6>
+        <a href="Rookledger Site.dc.html" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Rookledger home</a>
+        <a href="#modules" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Modules</a>
+        <a href="#cis" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">CIS &amp; CIS300</a>
+        <a href="#screens" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Inside the product</a>
+        <a href="#deploy" style="color: inherit; text-decoration: none" style-hover="color: var(--color-accent)">Deployment</a>
+      </div>
+      <div style="display: grid; gap: 8px; align-content: start; font-size: 13.5px">
+        <h6 style="margin: 0 0 4px; color: var(--color-neutral-600)">Integrations</h6>
+        <span>Xero</span>
+        <span>QuickBooks Online</span>
+        <span>Sage Accounting</span>
+        <span>FreeAgent</span>
+      </div>
+      <div style="display: grid; gap: 8px; align-content: start; font-size: 13.5px">
+        <h6 style="margin: 0 0 4px; color: var(--color-neutral-600)">Legal</h6>
+        <span style="color: var(--color-neutral-700)">Private — all rights reserved</span>
+      </div>
+    </div>
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 40px 40px">
+      <div style="border-top: 1px solid var(--color-divider); padding-top: 16px; display: flex; justify-content: space-between; font-size: 12px; color: var(--color-neutral-600); flex-wrap: wrap; gap: 12px">
+        <span>© 2026 Rookledger Ltd — GroundworkOS</span>
+        <span>Built for UK Construction Industry Scheme contractors</span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showScreens&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  state = { tab: 0, word: 0, sent: false };
+
+  componentDidMount() {
+    this.timer = setInterval(() => this.setState(s => ({ word: (s.word + 1) % 4 })), 2200);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+
+  panels() {
+    return [
+      {
+        title: 'Jobs and the schedule',
+        body: 'Every job carries its own lifecycle, site details and progress, and feeds the crew and plant calendar.',
+        points: [
+          { n: '01', text: 'Enquiry through to completion, with progress tracked on the job itself' },
+          { n: '02', text: 'Site details and client record attached, not stored in an email thread' },
+          { n: '03', text: 'Crews and plant scheduled on one calendar' },
+          { n: '04', text: 'Daily timesheets logged per job and per worker' }
+        ],
+        caption: 'Jobs — this week', tag: 'Live', cols: ['Job', 'Stage', 'Value'],
+        rows: [
+          { a: 'J-1042', b: 'Groundworks — in progress', c: '£184,500' },
+          { a: 'J-1039', b: 'Drainage — awaiting sign-off', c: '£46,200' },
+          { a: 'J-1036', b: 'Foundations — complete', c: '£212,800' },
+          { a: 'J-1031', b: 'Enabling works — quoted', c: '£58,000' },
+          { a: 'J-1028', b: 'S278 — on hold', c: '£96,400' }
+        ]
+      },
+      {
+        title: 'Quotes, invoices and PDFs',
+        body: 'Line-item quotes go out as PDFs and can be approved through a shareable client link; invoices carry the CIS deduction and sync to the accounts.',
+        points: [
+          { n: '01', text: 'Line-item quotes with PDF export and client email sending' },
+          { n: '02', text: 'Client portal approval links — no login for the client' },
+          { n: '03', text: 'CIS-aware invoicing with the deduction calculated automatically' },
+          { n: '04', text: 'Contacts, invoices and quotes sync; payment status pulls back' }
+        ],
+        caption: 'Invoice 2044 — CIS applied', tag: 'Net 20%', cols: ['Line', 'Basis', 'Amount'],
+        rows: [
+          { a: 'Labour', b: 'Qualifying', c: '£18,400.00' },
+          { a: 'Materials', b: 'Excluded', c: '£7,150.00' },
+          { a: 'Plant hire', b: 'Excluded', c: '£2,300.00' },
+          { a: 'CIS deduction', b: '20% on labour', c: '−£3,680.00' },
+          { a: 'Payable', b: 'Net of CIS', c: '£24,170.00' }
+        ]
+      },
+      {
+        title: 'CIS and subcontractors',
+        body: 'Verification status sits on the subcontractor record and drives the deduction rate; the monthly return exports HMRC-formatted.',
+        points: [
+          { n: '01', text: 'Status tracked as Gross, Net, Unmatched or Unverified' },
+          { n: '02', text: 'Deduction calculated on qualifying labour automatically' },
+          { n: '03', text: 'CIS300 return exported as HMRC-formatted CSV per tax month' },
+          { n: '04', text: 'CSCS, NRSWA and public liability expiry tracked per person' }
+        ],
+        caption: 'Subcontractors — CIS status', tag: 'Tax month 5', cols: ['Subcontractor', 'Status', 'Rate'],
+        rows: [
+          { a: 'M. Doyle Plant', b: 'Verified — Gross', c: '0%' },
+          { a: 'Kearns Drainage', b: 'Verified — Net', c: '20%' },
+          { a: 'RJ Kerbing', b: 'Verified — Net', c: '20%' },
+          { a: 'Sedgwick Muckaway', b: 'Unmatched', c: '30%' },
+          { a: 'T. Whelan', b: 'Unverified', c: '30%' }
+        ]
+      },
+      {
+        title: 'Plant and documents',
+        body: 'The fleet and the paperwork both expire. Both are tracked with alerts before the date, not after.',
+        points: [
+          { n: '01', text: 'MOT, service and LOLER exam dates tracked per machine' },
+          { n: '02', text: 'RAMS, insurance and permits held against job and company' },
+          { n: '03', text: 'Expiry alerts on compliance documents' },
+          { n: '04', text: 'Files stored in your own S3-compatible bucket' }
+        ],
+        caption: 'Plant — next dates', tag: '2 due', cols: ['Asset', 'Check', 'Due'],
+        rows: [
+          { a: '8t excavator', b: 'LOLER exam', c: '12 days' },
+          { a: 'Tipper — DX21', b: 'MOT', c: '19 days' },
+          { a: 'Roller 120', b: 'Service', c: '34 days' },
+          { a: 'Whacker plate', b: 'Service', c: '61 days' },
+          { a: 'Site welfare', b: 'Insurance', c: '88 days' }
+        ]
+      },
+      {
+        title: 'Reports and the audit trail',
+        body: 'Revenue overview, job P&L and the rate book on one side; a complete change history on the other.',
+        points: [
+          { n: '01', text: 'Revenue overview and per-job profit and loss' },
+          { n: '02', text: 'Rate book kept in the system, not a printed sheet' },
+          { n: '03', text: 'Every create, update and delete recorded with full change history' },
+          { n: '04', text: 'Audit log and users restricted to admins' }
+        ],
+        caption: 'Job P&L — quarter', tag: 'Manager view', cols: ['Job', 'Revenue', 'Margin'],
+        rows: [
+          { a: 'J-1042', b: '£184,500', c: '18.4%' },
+          { a: 'J-1039', b: '£46,200', c: '11.9%' },
+          { a: 'J-1036', b: '£212,800', c: '22.1%' },
+          { a: 'J-1031', b: '£58,000', c: '9.6%' },
+          { a: 'J-1028', b: '£96,400', c: '15.2%' }
+        ]
+      }
+    ];
+  }
+
+  renderVals() {
+    const words = ['on site.', 'in the office.', 'at month end.', 'under CIS.'];
+    const p = this.panels()[this.state.tab];
+    const mark = i => (this.state.tab === i ? 'var(--color-accent)' : 'transparent');
+    return {
+      rotator: words[this.state.word],
+      showScreens: this.props.showScreens ?? true,
+      tab0: () => this.setState({ tab: 0 }),
+      tab1: () => this.setState({ tab: 1 }),
+      tab2: () => this.setState({ tab: 2 }),
+      tab3: () => this.setState({ tab: 3 }),
+      tab4: () => this.setState({ tab: 4 }),
+      mark0: mark(0), mark1: mark(1), mark2: mark(2), mark3: mark(3), mark4: mark(4),
+      panelTitle: p.title,
+      panelBody: p.body,
+      panelPoints: p.points,
+      tableCaption: p.caption,
+      tableTag: p.tag,
+      colA: p.cols[0], colB: p.cols[1], colC: p.cols[2],
+      rows: p.rows,
+      submitLabel: this.state.sent ? 'Request sent — we\u2019ll be in touch' : 'Request a walkthrough',
+      onSubmit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
